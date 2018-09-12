@@ -1,3 +1,7 @@
+##任务安排
+- [x] 安排任务计划                    2018/9/12 
+- [x] FFMpeg 结构详解&解码重要函数讲解  2018/9/12 
+
 # OpenGL ES + CAEAGLLayer 视频渲染
 
 - FFmpeg 视频解码
@@ -11,10 +15,6 @@ FFmpeg是一套可以用来记录、转换数字音频、视频，并能将其�
 FFmpeg在Linux平台下开发，但它同样也可以在其它操作系统环境中编译运行，包括Windows、Mac OS X等。这个项目最早由Fabrice Bellard发起，2004年至2015年间由Michael Niedermayer主要负责维护。许多FFmpeg的开发人员都来自MPlayer项目，而且当前FFmpeg也是放在MPlayer项目组的服务器上。项目的名称来自MPEG视频编码标准，前面的"FF"代表"Fast Forward"。
 
 [--来自百度百科]()
-
-##任务安排
-- [x] 安排任务计划  2018/9/11 
-- [ ] FFMpeg 结构详解&解码重要函数讲解
 
 ### FFMpeg 音频&视频解码重要函数详解
 FFMpeg 结构介绍:
