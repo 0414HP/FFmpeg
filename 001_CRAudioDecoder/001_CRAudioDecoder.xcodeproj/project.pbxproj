@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122D21DC2152224600D9D5C4 /* 111.aac in Resources */ = {isa = PBXBuildFile; fileRef = 122D21DB2152224600D9D5C4 /* 111.aac */; };
+		122D21E02152345D00D9D5C4 /* AudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 122D21DF2152345D00D9D5C4 /* AudioOutput.m */; };
+		12615D342150A1A8002BB724 /* CRFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 12615D332150A1A8002BB724 /* CRFrame.m */; };
+		12615D372150A1BD002BB724 /* CRAudioFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 12615D362150A1BD002BB724 /* CRAudioFrame.m */; };
+		12615D3A2150A40E002BB724 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 12615D392150A40E002BB724 /* libiconv.2.4.0.tbd */; };
+		12615D3D2150E013002BB724 /* CRAVSynchronizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 12615D3C2150E013002BB724 /* CRAVSynchronizer.m */; };
 		12BB166A2149048F005A0261 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BB16692149048F005A0261 /* AppDelegate.m */; };
 		12BB166D2149048F005A0261 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 12BB166C2149048F005A0261 /* ViewController.mm */; };
 		12BB16702149048F005A0261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12BB166E2149048F005A0261 /* Main.storyboard */; };
@@ -19,6 +25,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		122D21DB2152224600D9D5C4 /* 111.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = 111.aac; sourceTree = "<group>"; };
+		122D21DE2152345D00D9D5C4 /* AudioOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioOutput.h; sourceTree = "<group>"; };
+		122D21DF2152345D00D9D5C4 /* AudioOutput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioOutput.m; sourceTree = "<group>"; };
+		12615D322150A1A8002BB724 /* CRFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRFrame.h; sourceTree = "<group>"; };
+		12615D332150A1A8002BB724 /* CRFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRFrame.m; sourceTree = "<group>"; };
+		12615D352150A1BD002BB724 /* CRAudioFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAudioFrame.h; sourceTree = "<group>"; };
+		12615D362150A1BD002BB724 /* CRAudioFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAudioFrame.m; sourceTree = "<group>"; };
+		12615D392150A40E002BB724 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		12615D3B2150E013002BB724 /* CRAVSynchronizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAVSynchronizer.h; sourceTree = "<group>"; };
+		12615D3C2150E013002BB724 /* CRAVSynchronizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAVSynchronizer.m; sourceTree = "<group>"; };
 		12BB16652149048F005A0261 /* 001_CRAudioDecoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 001_CRAudioDecoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BB16682149048F005A0261 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		12BB16692149048F005A0261 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12615D3A2150A40E002BB724 /* libiconv.2.4.0.tbd in Frameworks */,
 				12BB16D2214904B3005A0261 /* libffmpeg.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,11 +138,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122D21DD2152343900D9D5C4 /* AudioOutput */ = {
+			isa = PBXGroup;
+			children = (
+				122D21DE2152345D00D9D5C4 /* AudioOutput.h */,
+				122D21DF2152345D00D9D5C4 /* AudioOutput.m */,
+			);
+			path = AudioOutput;
+			sourceTree = "<group>";
+		};
+		12615D312150A18C002BB724 /* CRFrame */ = {
+			isa = PBXGroup;
+			children = (
+				12615D322150A1A8002BB724 /* CRFrame.h */,
+				12615D332150A1A8002BB724 /* CRFrame.m */,
+				12615D352150A1BD002BB724 /* CRAudioFrame.h */,
+				12615D362150A1BD002BB724 /* CRAudioFrame.m */,
+			);
+			path = CRFrame;
+			sourceTree = "<group>";
+		};
+		12615D382150A40E002BB724 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12615D392150A40E002BB724 /* libiconv.2.4.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		12BB165C2149048F005A0261 = {
 			isa = PBXGroup;
 			children = (
 				12BB16672149048F005A0261 /* 001_CRAudioDecoder */,
 				12BB16662149048F005A0261 /* Products */,
+				12615D382150A40E002BB724 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +188,7 @@
 			children = (
 				12BB16682149048F005A0261 /* AppDelegate.h */,
 				12BB16692149048F005A0261 /* AppDelegate.m */,
+				122D21DD2152343900D9D5C4 /* AudioOutput */,
 				12BB16D3214904B8005A0261 /* AudioDecoder */,
 				12BB16D4214904C0005A0261 /* Class */,
 				12BB167F214904B3005A0261 /* ffmpeg-ios */,
@@ -294,8 +341,11 @@
 		12BB16D3214904B8005A0261 /* AudioDecoder */ = {
 			isa = PBXGroup;
 			children = (
+				12615D312150A18C002BB724 /* CRFrame */,
 				12BB16D82149092D005A0261 /* CRAudioDecoder.h */,
 				12BB16D92149092D005A0261 /* CRAudioDecoder.m */,
+				12615D3B2150E013002BB724 /* CRAVSynchronizer.h */,
+				12615D3C2150E013002BB724 /* CRAVSynchronizer.m */,
 			);
 			path = AudioDecoder;
 			sourceTree = "<group>";
@@ -312,6 +362,7 @@
 		12BB16D5214904C5005A0261 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				122D21DB2152224600D9D5C4 /* 111.aac */,
 				12BB16D62149050C005A0261 /* 131.aac */,
 				12BB167121490491005A0261 /* Assets.xcassets */,
 				12BB166E2149048F005A0261 /* Main.storyboard */,
@@ -380,6 +431,7 @@
 				12BB167521490491005A0261 /* LaunchScreen.storyboard in Resources */,
 				12BB167221490491005A0261 /* Assets.xcassets in Resources */,
 				12BB16702149048F005A0261 /* Main.storyboard in Resources */,
+				122D21DC2152224600D9D5C4 /* 111.aac in Resources */,
 				12BB16D72149050C005A0261 /* 131.aac in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,7 +446,11 @@
 				12BB16DA2149092D005A0261 /* CRAudioDecoder.m in Sources */,
 				12BB166D2149048F005A0261 /* ViewController.mm in Sources */,
 				12BB167821490491005A0261 /* main.m in Sources */,
+				122D21E02152345D00D9D5C4 /* AudioOutput.m in Sources */,
+				12615D342150A1A8002BB724 /* CRFrame.m in Sources */,
+				12615D3D2150E013002BB724 /* CRAVSynchronizer.m in Sources */,
 				12BB166A2149048F005A0261 /* AppDelegate.m in Sources */,
+				12615D372150A1BD002BB724 /* CRAudioFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

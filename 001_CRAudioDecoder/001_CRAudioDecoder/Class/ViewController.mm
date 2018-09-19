@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#include "libavformat/avformat.h"
+#import "CRAVSynchronizer.h"
 
 @interface ViewController ()
 
@@ -18,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *sourcePath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"131.aac"];
+    
+    CRAVSynchronizer *synchronizer = [[CRAVSynchronizer alloc] init];
+    [synchronizer openFile:sourcePath withOptions:nil];
 }
 
 
